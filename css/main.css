@@ -99,6 +99,15 @@ textarea {
    ========================================================================== */
 
    /*--- FOR TROUBLESHOOTING, BORRAR AL FINAL--*/
+
+   /*---html {
+     border: black solid;
+   }
+
+   body {
+     border: white solid;
+   }
+
    .content-wrapper {
      border: red solid;
    }
@@ -122,20 +131,42 @@ textarea {
    /* --- General styles --- */
    html {
      width: 100%;
-     font-size: 16px;
+     max-width: 1200px;
+     font-size: 12px;
      font-family: 'Poppins', sans-serif;
+     font-weight: 400;       
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;   
+   }
+
+   body {
+     width: 100%;
    }
 
    h1 {
-     font-size: 2.25em;
+     font-size: 3em;
+   }
+
+   h2 {
+     font-size: 2.5em;
    }
 
    h3 {
-     font-size: 1.125em;
+     font-size: 1.5em;
    }
 
-   header,
-   footer {
+   h4 {
+
+   }
+
+   p {
+     font-family: 'Open sans', sans-serif;
+     font-size: 1.16em;
+   }
+
+   header {
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
@@ -144,11 +175,27 @@ textarea {
      color: #d2d3d3;
    }
 
+   footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #202322;
+    color: #d2d3d3;
+  }
+   
+   main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center
+  }
+
    .content-wrapper {
      width: 100%;
      display: flex;
      flex-flow: row wrap;
-     justify-content: space-between;
+     justify-content: flex-start;
      align-items: flex-start;
    }
 
@@ -158,16 +205,27 @@ textarea {
    header .content-wrapper{
      display: flex;
      justify-content: center;
+     align-items: center;
+     padding: 14px 0 9px 0;
    }
 
    .logo {
      height: auto;
      max-width: 100%;
      flex-grow: 1;
+     display: flex;
+     justify-content: center;
    }
 
    .logo img {
      max-width: 280px;
+   }
+
+   .nav-divider {
+     width: 100%;
+     height: 10px;
+     border-bottom: solid #9d9ea4;
+     border-width: 1px;
    }
 
     nav ul {
@@ -182,10 +240,9 @@ textarea {
    nav ul li {
     font-family: "Open sans", sans-serif;
     font-weight: 700;
-    font-size: 1.125 em;
+    font-size: 1.5em;
     text-decoration: none;
     list-style-type: none;
-    justify-content: space-around;
    }
 
    a:link, a:visited {
@@ -202,17 +259,10 @@ textarea {
    /*--- Main section styles ---*/
    /*---------------------------*/
    
-   main {
-     display: flex;
-     flex-flow: column wrap;
-     justify-content: center;
-     align-content: center
-   }
 
    /*--- Hero section ---*/
    
    #hero-image {
-    width: auto; 
     height: 600px;
     background-image: url("../img/jake-melara-30679-unsplash.jpg");
     background-position: center center;
@@ -229,17 +279,24 @@ textarea {
     color: #e2e3ed;
     font-weight: 400;
     font-size: 3.75em;
-    max-width: 720px;
+    max-width: 90%;
+    padding: 0 6% 0 6%;
    }
 
    /*--- Newsletter section ---*/
-   aside .content-wrapper{
-     justify-content: space-around;
+
+   aside {
+     padding: 0 6% 0 6%;
    }
 
    .newsletter {
      background-color: #527158;
      color: #e2e3ed;
+   }
+
+   aside .content-wrapper {
+     flex-flow: row wrap;
+     justify-content: flex-start;
    }
 
    .form-description {
@@ -248,47 +305,40 @@ textarea {
 
    .newsletter h3 {
      margin: 0 0;
-     font-size: 1.875em;
-     font-weight: 400;
    }
 
    .newsletter p {
-    font-family: "Open sans", sans-serif;
-    font-size: 1.125em; 
     margin-top: 17px;
     margin-bottom: 32px;
-    max-width: 320px;
    }
 
    .form {
      display: flex;
      flex-flow: column wrap;
-     margin-top: 40px;
      margin-bottom: 55px;
+     position: relative;
+     width: inherit;
    }
 
-   .email-box {
-    width: 320px;
-    height: 50px;
-    margin-top: 17px;
-   }
-
+   
    input {
      font-family: 'Open Sans', sans-serif;
-     font-size: 1.125em;
-     font-weight: 400;
      font-style: italic;
      color: #9d9ea4;
      border: none;
      padding: 0 0;
    }
 
+   .email-box {
+    height: 50px;
+    margin-top: 17px;
+    padding-left: 15px;
+   }
+
    .download-button {
-     font-family: 'Poppins', sans-serif;
      font-size: 1.5em;
      color: #e2e3ed;
      font-style: normal;
-     width: 320px;
      height: 50px;
      margin-top: 22px;
      background-color: #2a423a;
@@ -307,15 +357,14 @@ textarea {
    }
 
    .features h2 {
-     font-family: "Poppins", sans-serif;
-     font-size: 2.25em;
      color: #e2e3ed;
+     padding: 0 6% 0 6%;
    }
 
    .features article {
      display: flex;
      flex-flow: column;
-     justify-content: space-around;
+     justify-content: flex-start;
      align-items: center;
      width: 235px;
      height: 235px;
@@ -323,18 +372,16 @@ textarea {
    }
 
    .features article img {
-     max-width: 100px;
-     height: auto;
+     max-width: auto;
+     height: 100px;
      max-height: 100px;
      border: 0 0;
      padding: 0 0;
-     margin: 0 0 0 0;
+     margin: 0 0 50px 0;
    }
 
    .features-item-description {
      font-family: 'Open sans', san-serif;
-     font-size: 1.125em;
-     font-weight: 400;
      text-align: center;
      max-width: 225px;
      height: auto;
@@ -352,41 +399,149 @@ textarea {
    }
 
    .reviews h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.875em;
-    font-weight: 400;
     color: #e2e3ed;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 0 6% 0 6%;
+  }
+
+  .reviews .content-wrapper {
+    margin-bottom: 50px;
   }
    
-   .reviews .content-wrapper{
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  
-   .reviews img {
-     max-width: 100%;
+  .reviews img {
+     max-width: 90%;
      height: auto;
+     margin-bottom: 22px;
+     padding: 0 6% 0 6%;
+  }
+
+   .review-text-wrapper {
+     max-width: 410px;
+     height: auto;
+     padding: 0 6% 0 6%;
    }
 
    .review-text {
     color: #e2e3ed;
-    font-weight: 400;
     display: flex;
     flex-flow: column;
    }
 
    .review-text h4 {
-     font-family: "Poppins", sans-serif;
-     font-size: 1.125em;   
+     margin-top: 0px;
+     margin-bottom: 13px;  
    }
 
    .review-text p {
     font-family: "Open sans", sans-serif;
-    font-size: 0.875em;  
+    font-size: 0.875em;
+    margin-top: 13px;
+    margin-bottom: 0px;
    }
 
   
+   /*---------------------------*/
+   /*---    Footer styles    ---*/
+   /*---------------------------*/
 
+   footer .content-wrapper {
+     justify-content: center;
+     align-items: flex-start;
+     font-style: normal;
+   }
+
+   .contact, .social {
+     width: 320px;
+     min-height: 200px;
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: flex-start;
+     align-items: center;
+     text-align: center;
+   } 
+
+   .contact h3, .social h3 {
+     margin: 50px 0 20px 0;
+   }
+
+   .contact p {
+     margin: 0 0;
+   }
+
+   .social-icon {
+     height: 25px;
+     width: 25px;
+     background: #527158;
+     border-radius: 50%;
+     padding: 30px;
+     color: transparent;
+  }
+
+
+
+
+/****** Media queries to adjust contents to TABLET and DESKTOP*****/
+
+/* Tablet styles */
+@media all and (min-width: 768px) {
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  nav {
+    max-width: 50%;
+    padding-right: 6%;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 50%;
+    padding: 0 6% 0 6%;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+
+  aside .content-wrapper{
+    justify-content: space-between;
+  }
+  
+   .form-description, .form {
+    margin-top: 40px;
+    max-width: 40%;
+  }
+
+  .reviews img {
+    max-width: 40%;
+    padding-right: 10px;
+ }
+
+ .review-text-wrapper {
+   width: 40%;
+   padding: 0 0 0 38px;
+ }
+ 
+
+
+
+}
+
+
+/* Desktop styles */
+@media all and (min-width: 1200px) {
+
+  aside .content-wrapper{
+    justify-content: space-around;
+  }
+
+  .form-description, .form {
+    max-width: 320px;
+  }
+
+}
 
   /* ==========================================================================
   Break points
