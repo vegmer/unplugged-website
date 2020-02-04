@@ -132,9 +132,7 @@ textarea {
    html {
      width: 100%;
      max-width: 1200px;
-     font-size: 12px;
-     font-family: 'Poppins', sans-serif;
-     font-weight: 400;       
+     font-size: 16px;
      display: flex;
      flex-direction: row;
      justify-content: center;
@@ -143,18 +141,22 @@ textarea {
 
    body {
      width: 100%;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;     
+     font-size: 1em;
+     line-height: 1.4;  
    }
 
    h1 {
-     font-size: 3em;
+     font-size: 2.25em;
    }
 
    h2 {
-     font-size: 2.5em;
+     font-size: 1.875em;
    }
 
    h3 {
-     font-size: 1.5em;
+     font-size: 1.125em;
    }
 
    h4 {
@@ -163,7 +165,7 @@ textarea {
 
    p {
      font-family: 'Open sans', sans-serif;
-     font-size: 1.16em;
+     font-size: 0.875em;
    }
 
    header {
@@ -336,7 +338,7 @@ textarea {
    }
 
    .download-button {
-     font-size: 1.5em;
+     font-size: 1.125em;
      color: #e2e3ed;
      font-style: normal;
      height: 50px;
@@ -481,67 +483,7 @@ textarea {
 
 
 
-/****** Media queries to adjust contents to TABLET and DESKTOP*****/
 
-/* Tablet styles */
-@media all and (min-width: 768px) {
-  header .content-wrapper {
-    justify-content: space-between;
-  }
-
-  nav {
-    max-width: 50%;
-    padding-right: 6%;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    max-width: 50%;
-    padding: 0 6% 0 6%;
-  }
-
-  .nav-divider {
-    display: none;
-  }
-
-  aside .content-wrapper{
-    justify-content: space-between;
-  }
-  
-   .form-description, .form {
-    margin-top: 40px;
-    max-width: 40%;
-  }
-
-  .reviews img {
-    max-width: 40%;
-    padding-right: 10px;
- }
-
- .review-text-wrapper {
-   width: 40%;
-   padding: 0 0 0 38px;
- }
- 
-
-
-
-}
-
-
-/* Desktop styles */
-@media all and (min-width: 1200px) {
-
-  aside .content-wrapper{
-    justify-content: space-around;
-  }
-
-  .form-description, .form {
-    max-width: 320px;
-  }
-
-}
 
   /* ==========================================================================
   Break points
@@ -639,20 +581,65 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+/****** Media queries to adjust contents to TABLET and DESKTOP*****
+/========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/* Tablet styles */
+@media all and (min-width: 768px) {
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  nav {
+    max-width: 50%;
+    padding-right: 6%;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 50%;
+    padding: 0 6% 0 6%;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+
+  aside .content-wrapper{
+    justify-content: space-between;
+  }
+  
+   .form-description, .form {
+    margin-top: 40px;
+    max-width: 40%;
+  }
+
+  .reviews img {
+    max-width: 40%;
+    padding-right: 10px;
+ }
+
+ .review-text-wrapper {
+   width: 40%;
+   padding: 0 0 0 38px;
+ }
+ 
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+/* Desktop styles */
+@media all and (min-width: 1200px) {
+
+  aside .content-wrapper{
+    justify-content: space-around;
+  }
+
+  .form-description, .form {
+    max-width: 320px;
+  }
+
 }
 
 /* ==========================================================================
