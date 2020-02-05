@@ -185,6 +185,8 @@
       flex-flow: column;
       justify-content: center;
       align-content: center;
+      background-color: #527158;
+      color: #e2e3ed;
     }
   
      .content-wrapper {
@@ -479,12 +481,7 @@
     /* ==========================================================================
     FAQ Page
      ========================================================================== */
-    
-    main {
-      
-    }
-
-
+  
     .faq-headline, .faq-content-wrapper {
       width: 100%;
       padding: 0% 6% 0% 6%;
@@ -505,18 +502,57 @@
 
     .faq-content {
       flex: 1 1 40%;
-      padding: 0 2em 3em 0;
       min-width: 300px;
+      padding: 0 2em 3em 0;
     }
 
 
  /* ==========================================================================
     About page
      ========================================================================== */
-    
-     main {
-      background-color: #527158;
-      color: #e2e3ed;
+    .mission h2 {
+      padding: 0% 6% 0% 6%;
+    }
+
+    .mission-content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;    
+      padding: 0 6% 0 6%;
+      margin: 1em 0 1em 0;
+    }
+
+    .mission-p {
+      flex: 1 1 40%;
+      min-width: 300px;
+      padding: 0 2em 1em 0;
+    }
+
+    .about-contact {
+      padding: 0% 6% 0% 6%;
+    }
+
+    .about-contact .content-wrapper {
+      width: 100%;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 1em 0 1em 0;
+    }
+
+    .contact-content {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .general-info, .chat {
+      flex: 1 1 40%;
+      min-width: 300px;
+      padding: 0 2em 1em 0;
     }
 
 
