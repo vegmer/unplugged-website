@@ -208,16 +208,18 @@
      }
   
      .logo {
-       height: auto;
-       max-width: 100%;
-       flex-grow: 1;
-       display: flex;
-       justify-content: center;
-     }
-  
-     .logo img {
-       max-width: 280px;
-     }
+      width: 60%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0 6% 0 6%;
+      margin: 0;
+    }
+
+    .logo img {
+      width: 100%;
+    }
   
      .nav-divider {
        width: 100%;
@@ -466,13 +468,18 @@
      .contact p {
        margin: 0 0;
      }
+
+     .icon-wrapper {
+       display: flex;
+       flex-flow: row nowrap;
+       justify-content: space-between;
+       align-items: center;
+     }
   
      .social-icon {
-       height: 25px;
-       width: 25px;
+       max-width: 15px;
+       height: auto;
        background: #527158;
-       border-radius: 50%;
-       padding: 30px;
        color: transparent;
     }
   
@@ -553,6 +560,22 @@
       flex: 1 1 40%;
       min-width: 300px;
       padding: 0 2em 1em 0;
+    }
+
+    .map {
+      width: 100%;
+      height: 0%;
+      padding-bottom: 75%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
 
@@ -657,11 +680,9 @@
     }
   
     .logo {
-      display: flex;
-      justify-content: flex-start;
-      max-width: 50%;
-      padding: 0 6% 0 6%;
+      width: 28%;
     }
+
   
     .nav-divider {
       display: none;
@@ -686,19 +707,16 @@
      padding: 0 0 0 38px;
    }
 
-
-    /* ==========================================================================
-    FAQ Page
-     ========================================================================== */
-    
-
-     
    
   }
   
   
   /* Desktop styles */
   @media all and (min-width: 1200px) {
+
+    .logo {
+      width: 24%;
+    }
   
     aside .content-wrapper{
       justify-content: space-around;
