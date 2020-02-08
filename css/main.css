@@ -379,6 +379,13 @@
        padding: 0 0;
        margin: 0 0 50px 0;
      }
+
+     .features article i {
+       font-size: 6.25em;
+       border: 0 0;
+       padding: 0 0;
+       margin: 0 0 50px 0;
+     }
   
      .features-item-description {
        font-family: 'Open sans', san-serif;
@@ -518,7 +525,8 @@
     About page
      ========================================================================== */
     .mission h2 {
-      padding: 0% 6% 0% 6%;
+      padding: 6% 6% 0% 6%;
+      margin: 0;
     }
 
     .mission-content {
@@ -527,13 +535,14 @@
       justify-content: space-between;
       align-items: flex-start;    
       padding: 0 6% 0 6%;
-      margin: 1em 0 1em 0;
+      margin: 0 0 1em 0;
     }
 
     .mission-p {
       flex: 1 1 40%;
       min-width: 300px;
-      padding: 0 2em 1em 0;
+      padding: 0;
+      margin: 10px 25px 0 0;
     }
 
     .about-contact {
@@ -565,7 +574,7 @@
     .map {
       width: 100%;
       height: 0%;
-      padding-bottom: 75%;
+      padding-bottom: 125%;
       overflow: hidden;
       position: relative;
     }
@@ -692,7 +701,7 @@
       justify-content: space-between;
     }
     
-     .form-description, .form {
+    .form-description, .form {
       margin-top: 40px;
       max-width: 40%;
     }
@@ -706,6 +715,12 @@
      width: 40%;
      padding: 0 0 0 38px;
    }
+
+   
+   .map {
+    padding-bottom: 48%;
+    overflow: hidden;
+  }
 
    
   }
