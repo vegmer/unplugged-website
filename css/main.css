@@ -242,6 +242,7 @@
   
      nav ul li {
       font-family: "Open sans", sans-serif;
+      color: #e2e3ed;
       font-weight: 700;
       font-size: 1.5em;
       text-decoration: none;
@@ -324,12 +325,12 @@
      }
   
      
-     .form input{
+     input[type="text"]{
        font-family: 'Open Sans', sans-serif;
        font-style: italic;
        color: #9d9ea4;
        border: none;
-       padding: 0 0;
+       padding: 0 0 0 15px 0;
      }
   
      .email-box {
@@ -338,12 +339,14 @@
       padding-left: 15px;
      }
   
-     .download-button {
+     input[type="button"] {
        font-size: 1.125em;
        color: #e2e3ed;
        height: 50px;
        margin-top: 22px;
        background-color: #2a423a;
+       border-color: #2a423a;
+       border-style: none;
      }
   
   
