@@ -125,7 +125,6 @@
      /* --- General styles --- */
      html {
        width: 100%;
-       max-width: 1200px;
        margin:auto;
        font-size: 16px;
        display: flex;
@@ -430,7 +429,7 @@
     }
   
      .review-text-wrapper {
-       max-width: 410px;
+       max-width: 90%;
        height: auto;
        padding: 0 6% 0 6%;
      }
@@ -445,6 +444,11 @@
        margin-top: 0px;
        margin-bottom: 13px;  
      }
+
+     .review-text h3 {
+      margin-top: 0px;
+      margin-bottom: 18px;  
+    }
   
      .review-text p {
       font-family: "Open sans", sans-serif;
@@ -536,7 +540,7 @@
     }
 
     .faq-content {
-      flex: 1 1 40%;
+      flex: 1 1 50%;
       padding: 0 2em 3em 0;
     }
 
@@ -559,7 +563,7 @@
     }
 
     .mission-p {
-      flex: 1 1 40%;
+      flex: 1 1 50%;
       padding: 0;
       margin: 10px 25px 0 0;
     }
